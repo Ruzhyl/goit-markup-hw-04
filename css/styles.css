@@ -280,11 +280,11 @@ ul {
 }
 
 .social-list-link:hover {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .social-list-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .social-list-link:active {
@@ -422,10 +422,9 @@ ul {
   display: flex;
   align-items: center;
   margin-top: 16px;
+  gap: 16px;
 }
-.items:not(:last-child) {
-  margin-right: 16px;
-}
+
 .social-media-title {
   color: #fff;
   margin-bottom: 16px;
@@ -439,7 +438,17 @@ ul {
   fill: #f4f4fd;
 }
 .page-footer .social-list-link {
-  gap: 16px;
   width: 40px;
   height: 40px;
+}
+.page-footer .social-list-link:hover {
+  background-color: #31d0aa;
+}
+
+.page-footer .social-list-link:focus {
+  background-color: #31d0aa;
+}
+
+.page-footer .social-list-link:active {
+  background-color: #31d0aa;
 }
