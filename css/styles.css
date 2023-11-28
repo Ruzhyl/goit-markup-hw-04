@@ -109,7 +109,7 @@ ul {
   padding-bottom: 24px;
   font-weight: 500;
   color: #2e2f42;
-  transition: 250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-benefits__title,
@@ -160,6 +160,8 @@ ul {
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header .page-logo {
   margin-right: 76px;
@@ -193,15 +195,18 @@ ul {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section hero */
 .section-hero {
-  width: 1440рх;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -232,6 +237,7 @@ ul {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Section-benefits */
 .benefits-list {
@@ -274,11 +280,11 @@ ul {
 }
 
 .social-list-link:hover {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .social-list-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .social-list-link:active {
@@ -314,6 +320,7 @@ ul {
 }
 .team-item__description {
   text-align: center;
+  margin-bottom: 8px;
 }
 /* Section portfolio */
 .section-portfolio__title {
@@ -372,7 +379,7 @@ ul {
   transform: translateY(100%);
   color: #f4f4fd;
   background-color: #4d5ae5;
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover .text-overlay {
   transform: translateY(0%);
@@ -409,6 +416,7 @@ ul {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .socialinks-box {
   display: flex;
@@ -420,10 +428,18 @@ ul {
 }
 .social-media-title {
   color: #fff;
-
+  margin-bottom: 16px;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+}
+.social-icon {
+  fill: #f4f4fd;
+}
+.page-footer .social-list-link {
+  gap: 16px;
+  width: 40px;
+  height: 40px;
 }
